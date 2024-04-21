@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.titleCard{
+    background-color: rgb(42, 39, 39);
+    padding: .5rem;
+    font-size: 1.25rem;
+    color: white;
+}
+  
+.top-panel {
+    background-color: hsl(225, 6%, 25%);
+}
+  
+.panel {
+    height: 50vh;
+    display: flex;
+}
+
+.editor-container {
+    max-width: 33%;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    background-color: hsl(225, 6%, 25%);
+}
+  
+.editor-container.collapsed {
+    flex-grow: 0;
+}
+  
+.editor-container.collapsed .CodeMirror-scroll {
+    position: absolute;
+    overflow: hidden;
+}
+  
+.expand-contract-btn {
+    margin-left: .5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+  
+.editor-title {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(225, 6%, 13%);
+    color: white;
+    padding: .5rem .5rem .5rem 1rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+  
+.CodeMirror {
+    height: 100% !important;
+}
+  
+.editor-window {
+    flex-grow: 1;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 420px) {
+    *{
+        box-sizing: border-box;
+    }
+
+    .panel{
+        height: max-content;
+    }
+    
+    .top-panel{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .editor-container{
+        min-width: 100%;
+    }
+
+
+}
