@@ -47,7 +47,7 @@ function App() {
                 />
             </div>
             <header className='titleCard'>Output</header>
-            <div className="panel">
+            <div className="panel outputSpace">
                 <iframe srcDoc={srcDoc}
                     title='output'
                     sandbox='allow-scripts' 

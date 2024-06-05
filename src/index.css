@@ -24,6 +24,10 @@ body {
     display: flex;
 }
 
+.outputSpace {
+    height: 100vh;
+}
+
 .editor-container {
     max-width: 33%;
     flex-grow: 1;
