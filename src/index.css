@@ -25,7 +25,7 @@ body {
 }
 
 .outputSpace {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .editor-container {
